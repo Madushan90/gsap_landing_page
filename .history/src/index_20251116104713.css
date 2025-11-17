@@ -2,32 +2,13 @@
 
 @import "tailwindcss";
 
-@theme {
-    --color-yellow: #e7d393;
-    --color-white-100: #efefef;
-    --font-sans: "Mona Sans", sans-serif;
-    --font-modern-negra: "Modern Negra", sans-serif;
-    --font-serif: "DM Serif Text", serif;
-}
-
 html,
 body {
     width: 100%;
-    background-color: black;
-    font-family: 'Be Vietnam Pro';
+    background-color: rgb(14, 14, 14);
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-family: 'Abril Fatface';
 }
 
 @utility flex-center {
@@ -98,7 +79,7 @@ p {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
-            @apply md:mt-32 mt-40 text-8xl md:text-[20vw]  uppercase leading-none text-center font-modern-negra;
+            @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
         }
 
         .left-leaf {

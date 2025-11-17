@@ -14,20 +14,9 @@ html,
 body {
     width: 100%;
     background-color: black;
-    font-family: 'Be Vietnam Pro';
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-family: 'Abril Fatface';
 }
 
 @utility flex-center {

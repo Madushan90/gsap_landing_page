@@ -43,10 +43,10 @@ p {
 }
 
 @utility text-gradient {
-    background: linear-gradient(to bottom, #ffffff, #898989);
+    background: linear-gradient(to bottom, blue, red);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    /* color: transparent; */
 }
 
 @utility radial-gradient {
