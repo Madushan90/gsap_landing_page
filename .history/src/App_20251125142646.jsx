@@ -13,7 +13,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Cocktails />
-      {/* <div className="h-max bg-black"></div> */}
+      <div className="h-max bg-black"></div>
     </main>
   )
 }
