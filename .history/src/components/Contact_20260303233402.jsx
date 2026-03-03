@@ -2,7 +2,8 @@ import { openingHours, socials } from '../constants/constants'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
-
+import FooterLeftLeaf from '../images/footer-left-leaf.png'
+import FooterRightLeaf from '../images/footer-right-leaf.png'
 
 const Contact = () => {
 
@@ -35,8 +36,8 @@ const Contact = () => {
   return (
     <footer id='contact'>
 
-      <img src="/footer-right-leaf.png" alt="Leaf Right" id="f-right-leaf"/>
-      <img src="/footer-left-leaf.png" alt="Leaf Left" id="f-left-leaf"/>
+      <img src={FooterRightLeaf} alt="Leaf Right" id="f-right-leaf"/>
+      <img src={FooterLeftLeaf} alt="Leaf Left" id="f-left-leaf"/>
 
       <div className="content">
         <h2>Where To Find Us </h2>
