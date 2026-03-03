@@ -22,7 +22,6 @@ const App = () => {
       <Art />
       <Menu />
       <Contact />
-      {/* done footer */}
     </main>
   )
 }
