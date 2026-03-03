@@ -3,7 +3,8 @@ import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
 import { allCocktails } from '../constants/constants'
-
+import RightArrow  from '/right-arrow.png'
+import LefttArrow  from '/left-arrow.png'
 
 const Menu = () => {
     const contentRef = useRef();
@@ -67,33 +68,33 @@ const Menu = () => {
         </nav>
 
         <div className="content">
-		<div className="arrows">
-		 <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
-			<span>{prevCocktail.name}</span>
-			<img src='../../src/images/right-arrow.png' alt="right-arrow" aria-hidden="true" />
-		 </button>
-		 
-		 <button className="text-left" onClick={() => goToSlide(currentIndex + 1)}>
-			<span>{nextCocktail.name}</span>
-			<img src='../../src/images/left-arrow.png' alt="left-arrow" aria-hidden="true" />
-		 </button>
-		</div>
-		
-		<div className="cocktail">
-		 <img src={currentCocktail.image} className="object-contain"/>
-		</div>
-		
-		<div className="recipe">
-		 <div ref={contentRef} className="info">
-			<p>Recipe for:</p>
-			<p id="title">{currentCocktail.name}</p>
-		 </div>
-		 
-		 <div className="details">
-			<h2>{currentCocktail.title}</h2>
-			<p>{currentCocktail.description}</p>
-		 </div>
-		</div>
+            <div className="arrows">
+            <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
+                <span>{prevCocktail.name}</span>
+                <img src={RightArrow} alt="right-arrow" aria-hidden="true" />
+            </button>
+            
+            <button className="text-left" onClick={() => goToSlide(currentIndex + 1)}>
+                <span>{nextCocktail.name}</span>
+                <img src={LefttArrow} alt="left-arrow" aria-hidden="true" />
+            </button>
+            </div>
+            
+            <div className="cocktail">
+            <img src={currentCocktail.image} className="object-contain"/>
+            </div>
+            
+            <div className="recipe">
+            <div ref={contentRef} className="info">
+                <p>Recipe for:</p>
+                <p id="title">{currentCocktail.name}</p>
+            </div>
+            
+            <div className="details">
+                <h2>{currentCocktail.title}</h2>
+                <p>{currentCocktail.description}</p>
+            </div>
+            </div>
 	 </div>
 
     </section>

@@ -3,6 +3,8 @@ import gsap from 'gsap'
 import { featureLists, goodLists } from '../constants/constants'
 import { useGSAP } from '@gsap/react'
 import { useMediaQuery } from 'react-responsive'
+import CheckImage  from '/check.png'
+import UnderImage  from '/under-img.jpg'
 
 const Art = () => {
     const isMobile = useMediaQuery({maxWidth: 768});
@@ -45,7 +47,7 @@ const Art = () => {
                     {goodLists.map((features, index)=>{
                         return (
                             <li key={index} className='flex items-center gap-2'>
-                                <img src='../../src/images/check.png' alt='check' />
+                                <img src={CheckImage} alt='check' />
                                 <p>{features}</p>
                             </li>
                         );
@@ -53,7 +55,7 @@ const Art = () => {
                 </ul>
 
                 <div className="cocktail-img">
-                    <img src='../../src/images/under-img.jpg' 
+                    <img src={UnderImage} 
                         alt='cocktail' 
                         className='abs-center masked-img size-full object-contain'
                     
@@ -64,7 +66,7 @@ const Art = () => {
                     {featureLists.map((features, index)=>{
                         return (
                             <li key={index} className='flex items-center justify-start gap-2'>
-                                <img src='../../src/images/check.png' alt='check' />
+                                <img src={CheckImage} alt='check' />
                                 <p className='md:w-fit w-60'>{features}</p>
                             </li>
                         );

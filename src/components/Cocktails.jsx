@@ -2,8 +2,8 @@ import React from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { cocktailLists, mockTailLists } from '../constants/constants'
-import CocktailLeftLeaf  from '../../src/images/cocktail-left-leaf.png'
-import CocktailRightLeaf  from '../../src/images/cocktail-right-leaf.png'
+import CocktailLeftLeaf  from '/cocktail-left-leaf.png'
+import CocktailRightLeaf  from '/cocktail-right-leaf.png'
 
 const Cocktails = () => {
 

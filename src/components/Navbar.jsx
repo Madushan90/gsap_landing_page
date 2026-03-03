@@ -1,7 +1,7 @@
 import React from 'react'
 import gsap from 'gsap'
 import { navLinks } from '../constants/constants'
-import Logo from '../../src/images/logo.png'
+import Logo from '/logo.png'
 import { useGSAP } from '@gsap/react'
 
 const Navbar = () => {

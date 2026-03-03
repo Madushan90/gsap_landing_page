@@ -2,8 +2,9 @@ import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
-import LeftLeaf  from '../../src/images/hero-left-leaf.png'
-import RightLeaf  from '../../src/images/hero-right-leaf.png'
+import LeftLeaf  from '/hero-left-leaf.png'
+import RightLeaf  from '/hero-right-leaf.png'
+import CocktailAnimation  from '/output.mp4'
 import { useMediaQuery } from 'react-responsive'
 
 
@@ -93,7 +94,7 @@ const Hero = () => {
         <div className="video absolute inset-0">
             <video
                 ref={videoRef}
-                src='../../src/videos/output.mp4'
+                src={CocktailAnimation}
                 muted
                 playsInline
                 preload='auto'
